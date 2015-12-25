@@ -5,7 +5,8 @@
   "description": "Adds a \"open background image in new tab\" menu item. Finds closest element to the clicked area that has a background image.",
   "main": "background.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint .",
+    "build": "node scripts/create-archive.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/rexxars/view-background-image#readme",
   "devDependencies": {
+    "archiver": "^0.21.0",
     "eslint": "^1.10.3",
     "eslint-config-vaffel": "^3.0.0",
     "pre-commit": "^1.1.2"

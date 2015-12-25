@@ -1,3 +1,5 @@
+'use strict';
+
 // Holds the selected target. We need to fetch this from either contextmenu (obviously the best),
 // or the mousedown event (filtered by button). The contextmenu event doesn't always provide us
 // with the selected element, instead just giving us the HTML element, so we need to check that.
@@ -19,7 +21,7 @@ function setTarget(e) {
     var isActualTarget = e.target !== window.document.documentElement;
     var isMouseEvent = e.type === 'mousedown';
     var isRightClick = isMouseEvent && e.which === 3;
-    
+
     if (!isActualTarget || (isMouseEvent && isRightClick)) {
         return;
     }

@@ -1,4 +1,6 @@
-chrome.runtime.onInstalled && chrome.runtime.onInstalled.addListener(
+'use strict';
+
+chrome.runtime.onInstalled.addListener(
     function createContextItem() {
         chrome.contextMenus.create({
             contexts: ['all'],

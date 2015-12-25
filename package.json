@@ -1,0 +1,29 @@
+{
+  "name": "view-background-image",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Adds a \"open background image in new tab\" menu item. Finds closest element to the clicked area that has a background image.",
+  "main": "background.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexxars/view-background-image.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "background-image"
+  ],
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rexxars/view-background-image/issues"
+  },
+  "homepage": "https://github.com/rexxars/view-background-image#readme",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-vaffel": "^3.0.0"
+  }
+}

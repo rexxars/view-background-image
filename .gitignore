@@ -27,4 +27,4 @@ build/Release
 node_modules
 
 # Production assets
-build/view-background-image.zip
+build

@@ -24,6 +24,7 @@
   "homepage": "https://github.com/rexxars/view-background-image#readme",
   "devDependencies": {
     "eslint": "^1.10.3",
-    "eslint-config-vaffel": "^3.0.0"
+    "eslint-config-vaffel": "^3.0.0",
+    "pre-commit": "^1.1.2"
   }
 }

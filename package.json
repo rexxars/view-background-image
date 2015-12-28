@@ -1,7 +1,7 @@
 {
   "name": "view-background-image",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adds a \"open background image in new tab\" menu item. Finds closest element to the clicked area that has a background image.",
   "main": "background.js",
   "scripts": {

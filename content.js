@@ -18,11 +18,18 @@ function getBackgroundImage(element) {
 }
 
 function setTarget(e) {
-    var isActualTarget = e.target !== window.document.documentElement;
+    var isDocument = e.target === window.document.documentElement;
     var isMouseEvent = e.type === 'mousedown';
     var isRightClick = isMouseEvent && e.which === 3;
 
-    if (!isActualTarget || (isMouseEvent && isRightClick)) {
+    // The `contextmenu` event has a thing where it returns the document
+    // element as the target instead of the one we actually want
+    if (!isMouseEvent && isDocument) {
+        return;
+    }
+
+    // Disregard left-clicks/middle-clicks
+    if (isMouseEvent && !isRightClick) {
         return;
     }
 

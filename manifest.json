@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "View background image",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Adds a \"open background image in new tab\" menu item. Finds closest element to the clicked area that has a background image.",
     "permissions": ["contextMenus", "<all_urls>"],
     "background": {
